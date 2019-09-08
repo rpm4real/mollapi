@@ -59,7 +59,8 @@ func App() *buffalo.App {
 
 		app.GET("/", HomeHandler)
 		app.GET("/health/check", HealthCheck)
-		
+
+		app.Resource("/people", PeopleResource{})
 	}
 
 	return app
