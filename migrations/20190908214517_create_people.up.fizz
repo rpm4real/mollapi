@@ -1,0 +1,8 @@
+create_table("people") {
+	t.Column("id", "uuid", {primary: true})
+	t.Column("name", "string", {})
+	t.Column("email", "string", {})
+	t.Column("phone_number", "string", {})
+	t.Column("description", "text", {null: true})
+	t.Timestamps()
+}
