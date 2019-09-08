@@ -6,4 +6,3 @@ import "github.com/gobuffalo/buffalo"
 func HealthCheck(c buffalo.Context) error {
 	return c.Render(200, r.JSON(map[string]string{"message": "Up and running, yo"}))
 }
-
